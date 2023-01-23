@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "football-bnn"
+version = "0.1.0"
+description = ""
+authors = ["awh35"]
+readme = "README.md"
+packages = [{include = "football_bnn"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pandas = "^1.5.3"
+pymc = {git = "git@github.com:pymc-devs/pymc.git", rev = "v5.0.2"}
+seaborn = "^0.12.2"
+ipykernel = "^6.20.2"
+numpy = "1.24.1"
+scikit-learn = "^1.2.0"
+graphviz = "^0.20.1"
+black = {extras = ["jupyter"], version = "^22.12.0"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
